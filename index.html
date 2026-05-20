@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>А.С. Пушкин — солнце русской поэзии</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка с навигацией -->
+        <header class="header">
+            <div class="container header__inner">
+                <div class="logo">
+                    <span class="logo__icon">✍️</span>
+                    <span class="logo__text">Пушкин</span>
+                </div>
+                <nav class="nav">
+                    <button class="nav__toggle" id="navToggle" aria-label="Меню">☰</button>
+                    <ul class="nav__list" id="navList">
+                        <li><a href="#biography" class="nav__link">Биография</a></li>
+                        <li><a href="#works" class="nav__link">Творчество</a></li>
+                        <li><a href="#timeline" class="nav__link">Хронология</a></li>
+                        <li><a href="#gallery" class="nav__link">Галерея</a></li>
+                        <li><a href="#quote" class="nav__link">Цитаты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Герой-секция с элегантным фоном -->
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__content">
+                        <div class="hero__badge">1799 — 1837</div>
+                        <h1 class="hero__title">Александр Сергеевич<br>Пушкин</h1>
+                        <p class="hero__subtitle">«Солнце русской поэзии», основоположник современного литературного языка, гений слова и мысли.</p>
+                        <button class="hero__btn" id="randomPoemBtn">📖 Случайное стихотворение</button>
+                    </div>
+                    <div class="hero__image">
+                        <div class="portrait-frame">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Alexander_Pushkin_self_portrait_1820s.jpg/440px-Alexander_Pushkin_self_portrait_1820s.jpg" alt="Автопортрет Пушкина" class="portrait-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/ec/Alexander_Pushkin_by_Kiprensky.jpg'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Биография -->
+            <section id="biography" class="section bio">
+                <div class="container">
+                    <h2 class="section__title">Жизнь и судьба</h2>
+                    <div class="bio__grid">
+                        <div class="bio__text">
+                            <p>Александр Сергеевич Пушкин родился 6 июня (26 мая по ст.ст.) 1799 года в Москве, в дворянской семье. Детство будущего поэта прошло в литературной среде — отец, Сергей Львович, был знатоком французской словесности, а дядя, Василий Львович, известным поэтом. Воспитание оказало огромное влияние: няня Арина Родионовна привила любовь к народным сказкам и русской речи.</p>
+                            <p>В 1811 году Пушкин поступил в Царскосельский лицей — учебное заведение для подготовки высших чиновников. Именно там раскрылся его поэтический дар. Лицейское братство, дружба с Пущиным, Дельвигом, Кюхельбекером навсегда остались в сердце поэта. После выпуска он служил в Коллегии иностранных дел, но основным делом жизни стала литература.</p>
+                            <p>Вольнолюбивые стихи привели к южной ссылке (1820–1824), а затем — к ссылке в родовое имение Михайловское. Несмотря на опалу, Пушкин создаёт бессмертные произведения: «Бахчисарайский фонтан», «Цыганы», главы «Евгения Онегина», «Бориса Годунова». В 1831 году он женился на Наталье Гончаровой.</p>
+                            <p>Последние годы омрачены дуэлью с Жоржем Дантесом, защищавшим честь жены. 8 февраля 1837 года Пушкин был смертельно ранен и через два дня скончался. Его творчество стало фундаментом новой русской литературы.</p>
+                        </div>
+                        <div class="bio__fact">
+                            <h3>Интересные факты</h3>
+                            <ul>
+                                <li>✨ Пушкин владел 9 иностранными языками</li>
+                                <li>📖 Создал более 800 лирических стихотворений</li>
+                                <li>⚔️ Участвовал почти в 30 дуэлях, но стрелял первым лишь однажды</li>
+                                <li>🎭 Был не только поэтом, но и драматургом, прозаиком, критиком</li>
+                                <li>🏛️ Памятники поэту установлены в десятках стран мира</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Творчество: ключевые произведения -->
+            <section id="works" class="section works">
+                <div class="container">
+                    <h2 class="section__title">Бессмертные творения</h2>
+                    <div class="works__grid" id="worksGrid">
+                        <!-- Карточки будут подгружены через JS, но для надежности прописываем в HTML -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Хронология Timeline -->
+            <section id="timeline" class="section timeline">
+                <div class="container">
+                    <h2 class="section__title">Важные вехи</h2>
+                    <div class="timeline__wrapper" id="timelineList">
+                        <!-- JS заполнит -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Галерея изображений (портреты/иллюстрации) -->
+            <section id="gallery" class="section gallery">
+                <div class="container">
+                    <h2 class="section__title">Образы поэта</h2>
+                    <div class="gallery__grid" id="galleryGrid">
+                        <!-- Галерея изображений -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Цитаты + интерактивный генератор -->
+            <section id="quote" class="section quotes">
+                <div class="container quotes__container">
+                    <h2 class="section__title">Мудрость в строках</h2>
+                    <div class="quote-card" id="quoteCard">
+                        <div class="quote__icon">❝</div>
+                        <p class="quote__text" id="quoteText">Я памятник себе воздвиг нерукотворный, к нему не зарастет народная тропа...</p>
+                        <p class="quote__author" id="quoteAuthor">— А.С. Пушкин, «Памятник»</p>
+                        <button class="quote__btn" id="newQuoteBtn">Новая цитата</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <p>© 2025 — Вдохновение наследием А.С. Пушкина</p>
+                <p class="footer__quote">«Чтение — вот лучшее учение. Следовать за мыслями великого человека — есть наука самая занимательная.»</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
